@@ -5,3 +5,5 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 # Status
 
 Experimental.
+
+**Note** The default branch is `default`.
