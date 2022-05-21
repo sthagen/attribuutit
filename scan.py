@@ -15,9 +15,9 @@ def eject(name: str) -> int:
 
 
 @app.command()
-def scan(name: str, persist: bool = True) -> int:
+def scan(name: str, dry_run: bool = False) -> int:
     """Scan the file system based on the configuration given in name.json and persist the report eventually."""
-    if persist:
+    if not dry_run:
         typer.echo(f"Real run changing the world following the configuration {name}.json - later ...")
         return 2	
     else:
