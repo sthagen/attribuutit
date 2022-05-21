@@ -19,7 +19,7 @@ def scan(name: str, dry_run: bool = False) -> int:
     """Scan the file system based on the configuration given in name.json and persist the report eventually."""
     if not dry_run:
         typer.echo(f"Real run changing the world following the configuration {name}.json - later ...")
-        return 2	
+        return 2
     else:
         typer.echo(f"Dry run exposing the plan of execution when following the configuration {name}.json - later ...")
         return 0
