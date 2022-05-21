@@ -9,12 +9,14 @@ app = typer.Typer()
 
 @app.command()
 def eject(name: str) -> int:
+    """Eject an example configuration in JSON format with stem equal to name."""
     typer.echo(f"This will eject an example configuration as {name}.json")
     return 0
 
 
 @app.command()
 def scan(name: str, persist: bool = True) -> int:
+    """Scan the file system based on the configuration given in name.json and persist the report eventually."""
     if persist:
         typer.echo(f"Real run changing the world following the configuration {name}.json - later ...")
         return 2	
