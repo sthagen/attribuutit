@@ -5,6 +5,7 @@ import pathlib
 import sys
 
 import typer
+
 import attribuutit.shp as shp
 import attribuutit.tif as tif
 import attribuutit.vpf as vpf
