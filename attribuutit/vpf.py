@@ -1,5 +1,6 @@
 """Parsers for Vector Product Format (VPF) artifacts conforming to MIL-STD-2407."""
 from itertools import takewhile
+from typing import Dict, Tuple, Union, no_type_check
 
 EMPTY_FIELD_PLACEHOLDER = '-'
 VAR_LENGTH_INDICATOR = '*'
@@ -19,8 +20,9 @@ class ByteOrder:
     bo_indicator_index = 4
     head_off_expl = bo_indicator_index + 1  # Index of first header byte with byte order info present
 
+    @no_type_check
     @classmethod
-    def detect(cls, seq) -> (str, bool, int):
+    def detect(cls, seq) -> Tuple[str, bool, int]:
         """Detect the endianness of the artifact and return byte order, declaration method, and next offset."""
         byte_order_explicit = True if chr(seq[cls.bo_indicator_index]) in cls.bo_keys else False
         order_indicator = chr(seq[cls.bo_indicator_index]) if byte_order_explicit else cls.bo_keys[0]
@@ -34,10 +36,11 @@ class HeaderLength:
 
     header_length_range = slice(0, 4)
 
+    @no_type_check
     @classmethod
     def extract(cls, byte_order: str, seq) -> int:
         """Extract the length of the header for the artifact as encoded in the length field matching endianness."""
-        return int.from_bytes(seq[cls.header_length_range], byteorder=byte_order)  # type: ignore
+        return int.from_bytes(seq[cls.header_length_range], byteorder=byte_order)
 
 
 class Table:
@@ -49,17 +52,17 @@ class Table:
         'U': 'Unique key',
         'N': 'Non-unique key',
     }
-    table = {}
+    table: Dict[str, Union[int, object, str]] = {}
     ERROR = -1
 
-    def __init__(self, label: str, byte_stream):
+    def __init__(self, label: str, byte_stream: bytearray) -> None:
         """Parse the table data from the stream of bytes."""
         self.label = label
         self._seq = list(byte_stream)  # Eager consumption of the stream (for now)
 
         self.bootstrap_table()
 
-        next_segment_start = self.parse_table_description(self.table['header_byte_offset'] + 1)
+        next_segment_start = self.parse_table_description(self.table['header_byte_offset'] + 1)  # type: ignore
         if next_segment_start == self.ERROR:
             return
 
@@ -71,7 +74,7 @@ class Table:
         _ = self.parse_columns(next_segment_start)  # hand over ... an start of next segment or self.ERROR
         return
 
-    def bootstrap_table(self):
+    def bootstrap_table(self) -> None:
         """Detect byte order (endianness) from and determine header length of artifact."""
         byte_order, byte_order_explicit, header_byte_offset = ByteOrder.detect(self._seq)
         self.table = {
@@ -85,7 +88,7 @@ class Table:
 
     def parse_table_description(self, next_segment_start: int) -> int:
         """Parse the name of the table description and return next segment start offset."""
-        rem_seq = self._seq[next_segment_start:]  # type: ignore
+        rem_seq = self._seq[next_segment_start:]
         try:
             table_description = ''.join(chr(c) for c in takewhile(lambda x: chr(x) != self.semi_chr, rem_seq))
             self.table['table_description'] = table_description
@@ -96,11 +99,11 @@ class Table:
             self.table['error_detail'] = f'failing to parse table description with {err}'
             return self.ERROR
 
-        return self.table['header_byte_offset'] + 1 + len(table_description) + 1
+        return self.table['header_byte_offset'] + 1 + len(table_description) + 1  # type: ignore
 
     def parse_narrative_table_name(self, next_segment_start: int) -> int:
         """Parse the name of the narrative table and return next segment start offset."""
-        rem_seq = self._seq[next_segment_start:]  # type: ignore
+        rem_seq = self._seq[next_segment_start:]
         try:
             narrative_table_name = ''.join(chr(c) for c in takewhile(lambda x: chr(x) != self.semi_chr, rem_seq))
             self.table['narrative_table_name'] = narrative_table_name
@@ -153,7 +156,7 @@ class Table:
                 self.table['error'] = True
                 self.table['error_detail'] = f'failing to parse {col_name} column spec with {err}'
                 return self.ERROR
-            that_key_type = self.table['columns'][col_name]['key_type']
+            that_key_type = self.table['columns'][col_name]['key_type']  # type: ignore
             if that_key_type not in self.key_types:
                 self.table['error'] = True
                 self.table[
