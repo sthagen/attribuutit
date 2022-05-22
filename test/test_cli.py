@@ -1,6 +1,5 @@
-from typer.testing import CliRunner
-
 from scan import app
+from typer.testing import CliRunner
 
 runner = CliRunner()
 
