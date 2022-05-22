@@ -1,6 +1,6 @@
 import pathlib
 
-import vpf
+import attribuutit.vpf as vpf
 
 VPF_ROOT = pathlib.Path('local', 'incoming')
 
@@ -38,11 +38,11 @@ def test_table_library_reference_edge_bounding_rectangle_parsing():
         'optional_column_narrative_table_name': vpf.EMPTY_FIELD_PLACEHOLDER,
     }
     with open(VPF_ROOT / 'scenario' / '42' / 'libref' / 'ebr', 'rb') as source:
-        ebr = vpf.Table(label, source.read(4606))
+        ebr = vpf.Table(label, source.read(4606))  # noqa
         for key, value in base_expectation.items():
             assert ebr.table[key] == value
         assert sorted(ebr.table['columns']) == column_names_expected
-        assert ebr.table['columns']['id'] == index_column_data_expected
+        assert ebr.table['columns']['id'] == index_column_data_expected  # noqa
 
 
 def test_table_library_reference_text_primitive_parsing():
@@ -76,11 +76,11 @@ def test_table_library_reference_text_primitive_parsing():
         'optional_column_narrative_table_name': vpf.EMPTY_FIELD_PLACEHOLDER,
     }
     with open(VPF_ROOT / 'scenario' / '42' / 'libref' / 'txt', 'rb') as source:
-        txt = vpf.Table(label, source.read(397))
+        txt = vpf.Table(label, source.read(397))  # noqa
         for key, value in base_expectation.items():
             assert txt.table[key] == value
         assert sorted(txt.table['columns']) == column_names_expected
-        assert txt.table['columns']['id'] == index_column_data_expected
+        assert txt.table['columns']['id'] == index_column_data_expected  # noqa
 
 
 def test_table_library_reference_character_value_description_parsing():
@@ -116,11 +116,11 @@ def test_table_library_reference_character_value_description_parsing():
         'optional_column_narrative_table_name': vpf.EMPTY_FIELD_PLACEHOLDER,
     }
     with open(VPF_ROOT / 'scenario' / '42' / 'libref' / 'char.vdt', 'rb') as source:
-        char_vdt = vpf.Table(label, source.read(418))
+        char_vdt = vpf.Table(label, source.read(418))  # noqa
         for key, value in base_expectation.items():
             assert char_vdt.table[key] == value
         assert sorted(char_vdt.table['columns']) == column_names_expected
-        assert char_vdt.table['columns']['id'] == index_column_data_expected
+        assert char_vdt.table['columns']['id'] == index_column_data_expected  # noqa
 
 
 def test_table_library_reference_feature_class_schema_parsing():
@@ -157,11 +157,11 @@ def test_table_library_reference_feature_class_schema_parsing():
         'optional_column_narrative_table_name': vpf.EMPTY_FIELD_PLACEHOLDER,
     }
     with open(VPF_ROOT / 'scenario' / '42' / 'libref' / 'fcs', 'rb') as source:
-        fcs = vpf.Table(label, source.read(537))
+        fcs = vpf.Table(label, source.read(537))  # noqa
         for key, value in base_expectation.items():
             assert fcs.table[key] == value
         assert sorted(fcs.table['columns']) == column_names_expected
-        assert fcs.table['columns']['id'] == index_column_data_expected
+        assert fcs.table['columns']['id'] == index_column_data_expected  # noqa
 
 
 def test_table_library_reference_connected_primitive_parsing():
@@ -195,8 +195,8 @@ def test_table_library_reference_connected_primitive_parsing():
         'optional_column_narrative_table_name': vpf.EMPTY_FIELD_PLACEHOLDER,
     }
     with open(VPF_ROOT / 'scenario' / '42' / 'libref' / 'cnd', 'rb') as source:
-        cnd = vpf.Table(label, source.read(4415))
+        cnd = vpf.Table(label, source.read(4415))  # noqa
         for key, value in base_expectation.items():
             assert cnd.table[key] == value
         assert sorted(cnd.table['columns']) == column_names_expected
-        assert cnd.table['columns']['id'] == index_column_data_expected
+        assert cnd.table['columns']['id'] == index_column_data_expected  # noqa

@@ -1,5 +1,6 @@
-from scan import app
 from typer.testing import CliRunner
+
+from attribuutit.cli import app
 
 runner = CliRunner()
 

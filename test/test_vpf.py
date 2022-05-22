@@ -1,6 +1,6 @@
 import pathlib
 
-import vpf
+import attribuutit.vpf as vpf
 
 VPF_ROOT = pathlib.Path('local', 'incoming')
 
