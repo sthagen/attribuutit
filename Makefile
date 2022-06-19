@@ -3,9 +3,9 @@ package = shagen/attribuutit
 
 .DEFAULT_GOAL := all
 isort = isort attribuutit test
-black = black -S -l 120 --target-version py38 attribuutit test
+black = black -S -l 120 --target-version py39 attribuutit test
 flake8 = flake8 attribuutit test
-pytest = pytest --log-format="%(levelname)s %(message)s" --cov=attribuutit --cov-report term-missing --cov-branch --asyncio-mode=strict
+pytest = pytest --asyncio-mode=strict --cov=attribuutit --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
 
 .PHONY: install
 install:
