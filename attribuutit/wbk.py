@@ -1,12 +1,12 @@
 """Dump report into fixed format worksheets of a workbook from Redmond near Seattle, WA, USA."""
-import json
-import pathlib
-import sys
-from datetime import date
-from time import time
+# import json
+# import pathlib
+# import sys
+# from datetime import date
+# from time import time
 
-import xlsxwriter  # type: ignore
 import pandas as pd  # type: ignore
+import xlsxwriter  # type: ignore
 
 COL_SEP = ';'
 ENCODING = 'utf-8'
@@ -15,7 +15,7 @@ ENCODING = 'utf-8'
 def dump_row(sheet, row, entries=None):
     """Dump data into indicated row."""
     for col, entry in enumerate([] if entries is None else entries, start=0):
-        worksheet.write(row, col, str(entry))
+        sheet.write(row, col, str(entry))
 
 
 def add_sheet(workbook, name, headers):
@@ -29,7 +29,7 @@ def update_totals_table(counters, total_worksheet):
     total = 0
     line = 0
     for key in counters:
-        fill_row(total_worksheet, line, [f'Total {key} Number:', counters[key]])
+        dump_row(total_worksheet, line, [f'Total {key} Number:', counters[key]])
         total += counters[key]
         line += 1
 
@@ -52,12 +52,15 @@ def close_book(handle):
     try:
         handle.close()
     except Exception:  # pylint: disable=broad-except
-        print('The spreadsheet file is locked - possibly in use by another application. Please close the other app and execute again.')
+        print(
+            'The spreadsheet file is locked - possibly in use by another application.'
+            ' Please close the other app and execute again.'
+        )
         return 1
 
 
 def derive_csv(counter, path, out_folder):
-    """Derive a single CSV file for counter from workbook at path writing to path inside out folder and per convention.""" 
+    """Derive a single CSV file for counter from workbook at path writing to out folder and per convention."""
     table = pd.read_excel(path, counter)
     table.to_csv(out_folder / f'{counter}.csv', COL_SEP)
 
@@ -66,4 +69,4 @@ def derive_csvs(counters, path, out_folder):
     """Somehow clumsy derivation of CSV files from counters and main workbook at path."""
     for counter in counters:
         if counter not in ('folder', 'other') and counters[counter]:
-            create_csv(counter, path, out_folder)
+            derive_csv(counter, path, out_folder)
