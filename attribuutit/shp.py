@@ -31,17 +31,36 @@ def shape_type(code: int) -> str:
 @no_type_check
 def load(path: pathlib.Path):
     """Load the shape file at path."""
+    error = ''
     with shapefile.Reader(path) as shape:
         shape_type_name = shape_type(shape.shapeType)
         upstream_name = shape.shapeTypeName
-        print(f'upstream: {upstream_name} =?= {shape_type_name} :downstream')
         feature_count = len(shape)
-        print(f'#features: {feature_count}')
         bounding_box = shape.bbox
-        print(f'bbox: {bounding_box}')
         try:
             geo_json = shape.__geo_interface__
-            print(f'geojson: {geo_json}')
         except shapefile.ShapefileException as err:
-            print(f'problem reading database of shape for {path} with {err}')
-        print(shape)
+            geo_json = None
+            error = f'problem reading database of shape for {path} with {err}'
+
+    return error, {
+        'folder_path': str(path.parent),
+        'file_name': path.name,
+        'file_suffixes': path.suffixes,
+        'shape_type_name': shape_type_name,
+        'feature_count': feature_count,
+        'bounding_box': bounding_box,
+        'has_geo_json': bool(geo_json),
+        'geo_json_type': geo_json.get('type', None) if geo_json else None,
+    }
+
+
+@no_type_check
+def summary(shp_model, full_path=False):
+    """Summarize the shapefile model as single line string."""
+    path_shown = pathlib.Path(shp_model['folder_path']) / shp_model['file_name'] if full_path else shp_model['file_name']
+    return (
+        f"{path_shown} ->"
+        f" {shp_model['geo_json_type'] if shp_model['has_geo_json'] else shp_model['shape_type_name']}"
+        f"/{shp_model['feature_count']} within {shp_model['bounding_box']}"
+    )
