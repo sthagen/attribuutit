@@ -26,26 +26,16 @@ Commands:
 
 ```console
 ❯ attribuutit inspect GRAY_50M_SR_OB.tif
-Real run inspecting file at GRAY_50M_SR_OB.tif
-crs_name: WGS_84 (code 4326)
-bbox: ((-179.99999999999997, 90.0), (179.99999999996405, -89.99999999998201))
+Real run inspecting file at local/incoming/GRAY_50M_SR_OB.tif
+GRAY_50M_SR_OB.tif -> CRS WGS_84 (4326) within [-179.99999999999997, 90.0, 179.99999999996405, -89.99999999998201]
 ```
 
 ### Inspect Shape File
 
 ```console
 ❯ attribuutit inspect ne_110m_admin_0_tiny_countries.shp
-Real run inspecting file at ne_110m_admin_0_tiny_countries.shp
-upstream: POINT =?= POINT :downstream
-#features: 37
-bbox: [-175.23533295466754, -54.274478863695265, 179.20397422623353, 71.02824880643254]
-geojson: {'type': 'FeatureCollection', 'features': [{'type': 'Feature', 'properties': {'scalerank': 1, ...
-# - - - 8< - - -
-'geometry': {'type': 'Point', 'coordinates': (-36.792143407672654, -54.274478863695265)}}], 
-'bbox': [-175.23533295466754, -54.274478863695265, 179.20397422623353, 71.02824880643254]}
-shapefile Reader
-    37 shapes (type 'POINT')
-    37 records (171 fields)
+Real run inspecting file at local/incoming/ne_110m_admin_0_tiny_countries.shp
+ne_110m_admin_0_tiny_countries.shp -> FeatureCollection/37 within [-175.23533295466754, -54.274478863695265, 179.20397422623353, 71.02824880643254]
 ```
 
 ### Inspect VPF File
