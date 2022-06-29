@@ -11,31 +11,53 @@ import xlsxwriter  # type: ignore
 
 COL_SEP = ';'
 ENCODING = 'utf-8'
+ROW_INDEX_HEADERS = 0
+ROW_INDEX_CONTENT_START = 1
 
 
 @no_type_check
 def dump_row(sheet, row, entries=None):
     """Dump data into indicated row."""
     for col, entry in enumerate([] if entries is None else entries, start=0):
-        sheet.write(row, col, str(entry))
+        sheet.write(row, col, entry)
 
 
 @no_type_check
 def add_sheet(workbook, name, headers):
     """Add a sheet, fill in headers, and return the handle."""
     sheet = workbook.add_worksheet(name)
-    dump_row(sheet, row=0, entries=headers)
+    dump_row(sheet, row=ROW_INDEX_HEADERS, entries=headers)
     return sheet
 
 
+def fill_sheet(sheet, matrix):
+    """Dump data into the content area of the sheet#s table."""
+    if not matrix:
+        return
+
+    for row, entries in enumerate(matrix, start=ROW_INDEX_CONTENT_START):
+        dump_row(sheet, row, entries=entries)
+
+
 @no_type_check
-def update_totals_table(counters, total_worksheet):
-    total = 0
-    line = 0
-    for key in counters:
-        dump_row(total_worksheet, line, [f'Total {key} Number:', counters[key]])
-        total += counters[key]
-        line += 1
+def update_totals_table(total_worksheet, folder_count, files_count, aspect_counts):
+    """Update the worksheet total with a table containing the key-value pairs per file type and folder."""
+    dump_row(total_worksheet, ROW_INDEX_HEADERS, ['key', 'value'])
+    key_col_index = 0
+    value_col_index = 1
+
+    row = ROW_INDEX_CONTENT_START
+    total_worksheet.write(row, key_col_index, 'folder')
+    total_worksheet.write(row, value_col_index, folder_count)
+
+    row += 1
+    total_worksheet.write(row, key_col_index, 'file')
+    total_worksheet.write(row, value_col_index, files_count)
+
+    row += 1
+    for kv_row, (key, value) in enumerate(aspect_counts.items(), start=row):
+        total_worksheet.write(kv_row, key_col_index, f'file.{key}')
+        total_worksheet.write(kv_row, value_col_index, aspect_counts.get(value, 0))
 
 
 @no_type_check
