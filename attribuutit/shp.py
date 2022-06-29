@@ -34,7 +34,7 @@ def load(path: pathlib.Path):
     error = ''
     with shapefile.Reader(path) as shape:
         shape_type_name = shape_type(shape.shapeType)
-        upstream_name = shape.shapeTypeName
+        # upstream_name = shape.shapeTypeName
         feature_count = len(shape)
         bounding_box = shape.bbox
         try:
@@ -58,9 +58,9 @@ def load(path: pathlib.Path):
 @no_type_check
 def summary(shp_model, full_path=False):
     """Summarize the shapefile model as single line string."""
-    path_shown = pathlib.Path(shp_model['folder_path']) / shp_model['file_name'] if full_path else shp_model['file_name']
+    path_disp = pathlib.Path(shp_model['folder_path']) / shp_model['file_name'] if full_path else shp_model['file_name']
     return (
-        f"{path_shown} ->"
+        f'{path_disp} ->'
         f" {shp_model['geo_json_type'] if shp_model['has_geo_json'] else shp_model['shape_type_name']}"
         f"/{shp_model['feature_count']} within {shp_model['bounding_box']}"
     )
