@@ -45,7 +45,11 @@ def inspect(path_str: str, dry_run: bool = False) -> int:
             else:
                 print(error)
         elif suffix == '.tif':
-            tif.load(path)
+            error, bitmap = tif.load(path)
+            if not error:
+                print(tif.summary(bitmap))
+            else:
+                print(error)
         else:
             with open(path, 'rb') as source:
                 vpf_artifact = vpf.Table(str(path), (b for b in source.read()))
