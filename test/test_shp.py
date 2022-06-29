@@ -13,7 +13,6 @@ def test_shp_load(capsys):
     assert result['geo_json_type'] == 'FeatureCollection'
     bbox = result['bounding_box']
     assert len(bbox) == 4
-    # [-175.23533295466754, -54.274478863695265, 179.20397422623353, 71.02824880643254]
     assert bbox[0] <= bbox[2]
     assert bbox[1] <= bbox[3]
     assert -180 <= bbox[0] <= 180
