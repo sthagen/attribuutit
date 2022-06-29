@@ -56,12 +56,12 @@ def test_app_inspect_shp():
 
 def test_app_inspect_tif():
     inspect_cmd = 'inspect'
-    path_str = 'local/incoming/GRAY_50M_SR_OB.tif'
+    file_name = 'GRAY_50M_SR_OB.tif'
+    path_str = f'local/incoming/{file_name}'
     result = runner.invoke(app, [inspect_cmd, '--no-dry-run', path_str])
     assert result.exit_code == 0
-    assert 'Real run ' in result.stdout
-    assert f' inspecting file at {path_str}' in result.stdout
-    assert 'crs_name: WGS_84 (code 4326)\nbbox: ((' in result.stdout
+    assert f'Real run inspecting file at {path_str}' in result.stdout
+    assert f'{file_name} -> CRS WGS_84 (4326) within [-179.9' in result.stdout
 
 
 def test_app_inspect_dry():
