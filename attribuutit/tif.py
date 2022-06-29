@@ -9,7 +9,8 @@ def load(path: pathlib.Path):
     """Load the GeoTIFF file at path."""
     error = ''
     try:
-        geo_tiff = GeoTiff(str(path))  # Consider contributing upstream as neither pathlib nor context manager support there
+        # Consider contributing upstream as neither pathlib nor context manager support there
+        geo_tiff = GeoTiff(str(path))
         crs_code = geo_tiff.crs_code.value
         crs_name = geo_tiff.crs_code.name
         bounding_box = geo_tiff.tif_bBox
