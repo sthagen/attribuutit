@@ -39,7 +39,11 @@ def inspect(path_str: str, dry_run: bool = False) -> int:
         path = pathlib.Path(path_str)
         suffix = path.suffix
         if suffix == '.shp':
-            shp.load(path)
+            error, shape = shp.load(path)
+            if not error:
+                print(shp.summary(shape))
+            else:
+                print(error)
         elif suffix == '.tif':
             tif.load(path)
         else:
