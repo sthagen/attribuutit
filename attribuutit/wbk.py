@@ -30,6 +30,7 @@ def add_sheet(workbook, name, headers):
     return sheet
 
 
+@no_type_check
 def fill_sheet(sheet, matrix):
     """Dump data into the content area of the sheet#s table."""
     if not matrix:
