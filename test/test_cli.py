@@ -46,12 +46,12 @@ def test_app_inspect_vpf():
 
 def test_app_inspect_shp():
     inspect_cmd = 'inspect'
-    path_str = 'local/incoming/ne_110m_admin_0_tiny_countries.shp'
+    file_name = 'ne_110m_admin_0_tiny_countries.shp'
+    path_str = f'local/incoming/{file_name}'
     result = runner.invoke(app, [inspect_cmd, path_str])
     assert result.exit_code == 0
-    assert 'Real run ' in result.stdout
-    assert f' inspecting file at {path_str}' in result.stdout
-    assert '37 records (171 fields)' in result.stdout
+    assert f'Real run inspecting file at {path_str}' in result.stdout
+    assert f'{file_name} -> FeatureCollection/37 within [-175.2' in result.stdout
 
 
 def test_app_inspect_tif():
