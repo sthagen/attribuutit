@@ -30,10 +30,10 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/shage
 
-copyright: Copyright &copy; 2021 - 2022 Stefan Hagen under the MIT license
+copyright: Copyright &copy; 2022 Stefan Hagen under the MIT license
 
-repo_name: sthagen/attribuutit
-repo_url: https://github.com/sthagen/attribuutit
+repo_name: ~sthagen/attribuutit
+repo_url: https://git.sr.ht/~sthagen/attribuutit
 edit_uri: ""
 
 plugins:
