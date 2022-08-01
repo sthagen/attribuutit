@@ -132,7 +132,6 @@ dmypy.json
 *~
 .idea
 *.log
-local_publi.sh
-local_*
+local*
 .vscode/
 current-bandit.json
