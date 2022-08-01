@@ -1,5 +1,12 @@
 # Changes
 
+## 2022.8.1
+
+* Migrated upsteram away from github
+* Added third-party sofware documentation
+* Added SBOM
+* Bumped development and test dependencies
+* Added test coverage documentation
 ## 2022.6.30
 
 * Condensed output for shapefile and GeoTIFF inspect
