@@ -12,7 +12,7 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 
 ## Bug Tracker
 
-Feature requests and bug reports are bested entered in the [todos of attribuutit](https://todo.sr.ht/~sthagen/attribuutit).
+Feature requests and bug reports are best entered in the [todos of attribuutit](https://todo.sr.ht/~sthagen/attribuutit).
 
 ## Primary Source repository
 
