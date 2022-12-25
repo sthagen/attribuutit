@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with SHA256 checksum ([344e3bf0 ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256 "sha256:344e3bf02d779d1852b0f866f80735d3fa47d7be0ab8226cb6b25e1087f4482d")).
-<!--[[[end]]] (checksum: 1ac2d5180632150ffbf989b813377fec)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with SHA256 checksum ([17de8236 ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256 "sha256:17de8236c96c0bb109de47e56e33405ee9d4fae95692f2513bca14256766c1c3")).
+<!--[[[end]]] (checksum: 55e20efbc1d163a402016aaab20c6d7c)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -14,16 +14,25 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 |:--------------------------------------------------------------|:-------------------------------------------------|:--------------------------------------------------------|:------------------|:-------------------------------------------------------------------|
 | [geotiff](https://github.com/Open-Source-Agriculture/geotiff) | [0.2.7](https://pypi.org/project/geotiff/0.2.7/) | GNU Lesser General Public License v2 or later (LGPLv2+) | Kipling Crossing  | A noGDAL tool for reading and writing geotiff files                |
 | [pyshp](https://github.com/GeospatialPython/pyshp)            | [2.3.1](https://pypi.org/project/pyshp/2.3.1/)   | MIT                                                     | Joel Lawhead      | Pure Python read/write support for ESRI Shapefile format           |
-| [typer](https://github.com/tiangolo/typer)                    | [0.4.2](https://pypi.org/project/typer/0.4.2/)   | MIT License                                             | Sebastián Ramírez | Typer, build great CLIs. Easy to code. Based on Python type hints. |
-<!--[[[end]]] (checksum: 659454d820e32806befbbfac601525a6)-->
+| [typer](https://github.com/tiangolo/typer)                    | [0.7.0](https://pypi.org/project/typer/0.7.0/)   | MIT License                                             | Sebastián Ramírez | Typer, build great CLIs. Easy to code. Based on Python type hints. |
+<!--[[[end]]] (checksum: 53e0bff08dc8a28dfb2c7073b72bb8d9)-->
 
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name                                          | Version                                        | License     | Author         | Description (from packaging data)         |
-|:----------------------------------------------|:-----------------------------------------------|:------------|:---------------|:------------------------------------------|
-| [click](https://palletsprojects.com/p/click/) | [8.1.3](https://pypi.org/project/click/8.1.3/) | BSD License | Armin Ronacher | Composable command line interface toolkit |
-<!--[[[end]]] (checksum: dc3a866a7aa3332404bde3da87727cb9)-->
+| Name                                                    | Version                                                   | License                              | Author                    | Description (from packaging data)                                                          |
+|:--------------------------------------------------------|:----------------------------------------------------------|:-------------------------------------|:--------------------------|:-------------------------------------------------------------------------------------------|
+| [asciitree](http://github.com/mbr/asciitree)            | [0.3.3](https://pypi.org/project/asciitree/0.3.3/)        | MIT                                  | Marc Brinkmann            | Draws ASCII trees.                                                                         |
+| [certifi](https://github.com/certifi/python-certifi)    | [2022.12.7](https://pypi.org/project/certifi/2022.12.7/)  | Mozilla Public License 2.0 (MPL 2.0) | Kenneth Reitz             | Python package for providing Mozilla's CA Bundle.                                          |
+| [click](https://palletsprojects.com/p/click/)           | [8.1.3](https://pypi.org/project/click/8.1.3/)            | BSD License                          | Armin Ronacher            | Composable command line interface toolkit                                                  |
+| [entrypoints](https://github.com/takluyver/entrypoints) | [0.4](https://pypi.org/project/entrypoints/0.4/)          | MIT License                          | Thomas Kluyver            | Discover and load entry points from installed packages.                                    |
+| [fasteners](https://github.com/harlowja/fasteners)      | [0.18](https://pypi.org/project/fasteners/0.18/)          | Apache Software License              | Joshua Harlow             | A python package that provides useful locks                                                |
+| [numpy](https://www.numpy.org)                          | [1.24.0](https://pypi.org/project/numpy/1.24.0/)          | BSD License                          | Travis E. Oliphant et al. | Fundamental package for array computing in Python                                          |
+| [pyproj](https://github.com/pyproj4/pyproj)             | [3.4.1](https://pypi.org/project/pyproj/3.4.1/)           | MIT License                          | Jeff Whitaker             | Python interface to PROJ (cartographic projections and coordinate transformations library) |
+| [tifffile](https://www.lfd.uci.edu/~gohlke/)            | [2022.4.26](https://pypi.org/project/tifffile/2022.4.26/) | BSD License                          | Christoph Gohlke          | Read and write TIFF files                                                                  |
+| [zarr](https://github.com/zarr-developers/zarr-python)  | [2.13.3](https://pypi.org/project/zarr/2.13.3/)           | MIT License                          | UNKNOWN                   | An implementation of chunked, compressed, N-dimensional arrays for Python.                 |
+| numcodecs                                               | [0.11.0](https://pypi.org/project/numcodecs/0.11.0/)      | MIT License                          | UNKNOWN                   | A Python package providing buffer compression and transformation codecs for use            |
+<!--[[[end]]] (checksum: 7948d4a8d4e45dea21924c8014fca1ae)-->
 
 ## Dependency Tree(s)
 
@@ -40,19 +49,20 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
 geotiff==0.2.7
-  - numpy [required: Any, installed: 1.22.4]
-  - pyproj [required: Any, installed: 3.3.1]
-    - certifi [required: Any, installed: 2022.6.15]
-  - tifffile [required: >=2021.7.2,<2022.4.28, installed: 2021.7.2]
-    - numpy [required: >=1.15.1, installed: 1.22.4]
-  - zarr [required: >=2.10.*, installed: 2.10.3]
+  - numpy [required: Any, installed: 1.24.0]
+  - pyproj [required: Any, installed: 3.4.1]
+    - certifi [required: Any, installed: 2022.12.7]
+  - tifffile [required: >=2021.7.2,<2022.4.28, installed: 2022.4.26]
+    - numpy [required: >=1.19.2, installed: 1.24.0]
+  - zarr [required: >=2.10.*, installed: 2.13.3]
     - asciitree [required: Any, installed: 0.3.3]
-    - fasteners [required: Any, installed: 0.17.3]
-    - numcodecs [required: >=0.6.4, installed: 0.9.1]
-      - numpy [required: >=1.7, installed: 1.22.4]
-    - numpy [required: >=1.7, installed: 1.22.4]
+    - fasteners [required: Any, installed: 0.18]
+    - numcodecs [required: >=0.10.0, installed: 0.11.0]
+      - entrypoints [required: Any, installed: 0.4]
+      - numpy [required: >=1.7, installed: 1.24.0]
+    - numpy [required: >=1.7, installed: 1.24.0]
 pyshp==2.3.1
-typer==0.4.2
+typer==0.7.0
   - click [required: >=7.1.1,<9.0.0, installed: 8.1.3]
 ````
-<!--[[[end]]] (checksum: 12b6b331ac901b6ca7947fb6c50a25be)-->
+<!--[[[end]]] (checksum: 5a2d73d80a8c1c37f241f1f4cd4cd5b1)-->
