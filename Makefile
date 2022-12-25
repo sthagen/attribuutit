@@ -1,11 +1,8 @@
-SHELL = /bin/bash
-package = shagen/attribuutit
-
 .DEFAULT_GOAL := all
-isort = isort attribuutit test
 black = black -S -l 120 --target-version py39 attribuutit test
-flake8 = flake8 attribuutit test
+lint = ruff attribuutit test
 pytest = pytest --asyncio-mode=strict --cov=attribuutit --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
+types = mypy attribuutit
 
 .PHONY: install
 install:
@@ -19,7 +16,7 @@ install-all: install
 
 .PHONY: format
 format:
-	$(isort)
+	$(lint) --fix
 	$(black)
 
 .PHONY: init
@@ -30,8 +27,7 @@ init:
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	$(flake8)
-	$(isort) --check-only --df
+	$(lint)
 	$(black) --check --diff
 
 .PHONY: types
