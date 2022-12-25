@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:ef13ca70-9e94-47be-92cd-63052c74390e",
+  "serialNumber": "urn:uuid:d1e01dd9-3298-4f24-9cbc-5050c5597157",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-12-25T20:44:37.210909+00:00",
+    "timestamp": "2022-12-25T20:49:12.772752+00:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -56,21 +56,21 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "f4301689-68fe-48e9-89e4-673bf5130295",
+      "bom-ref": "29300575-00d6-41a8-8536-084db54dc7f2",
       "name": "geotiff",
       "version": "0.2.7",
       "purl": "pkg:pypi/geotiff@0.2.7"
     },
     {
       "type": "library",
-      "bom-ref": "27adb976-b386-469e-9427-44e3b2a584ba",
+      "bom-ref": "2b1d822d-8855-49ae-8cef-7143a4d59787",
       "name": "pyshp",
       "version": "2.3.1",
       "purl": "pkg:pypi/pyshp@2.3.1"
     },
     {
       "type": "library",
-      "bom-ref": "55cc16d4-dc32-46fd-a473-8c6b0c0a8dbe",
+      "bom-ref": "f787aab8-c0af-45bc-b177-deb389c1301f",
       "name": "typer",
       "version": "0.7.0",
       "purl": "pkg:pypi/typer@0.7.0"
@@ -78,15 +78,15 @@
   ],
   "dependencies": [
     {
-      "ref": "f4301689-68fe-48e9-89e4-673bf5130295",
+      "ref": "29300575-00d6-41a8-8536-084db54dc7f2",
       "dependsOn": []
     },
     {
-      "ref": "27adb976-b386-469e-9427-44e3b2a584ba",
+      "ref": "2b1d822d-8855-49ae-8cef-7143a4d59787",
       "dependsOn": []
     },
     {
-      "ref": "55cc16d4-dc32-46fd-a473-8c6b0c0a8dbe",
+      "ref": "f787aab8-c0af-45bc-b177-deb389c1301f",
       "dependsOn": []
     }
   ]
