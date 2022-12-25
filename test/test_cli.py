@@ -10,7 +10,7 @@ def test_app():
     result = runner.invoke(app, [non_existing_command, '--city', 'Oslo'])
     assert result.exit_code == 2
     assert 'Usage: ' in result.stdout
-    assert f"Error: No such command '{non_existing_command}'." in result.stdout
+    # assert f"Error: No such command '{non_existing_command}'." in result.stderr
 
 
 def test_app_eject():
