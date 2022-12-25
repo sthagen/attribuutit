@@ -1,0 +1,12 @@
+---
+packages:
+- asciitree
+- certifi
+- click
+- entrypoints
+- fasteners
+- numcodecs
+- numpy
+- pyproj
+- tifffile
+- zarr
