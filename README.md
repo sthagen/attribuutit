@@ -4,7 +4,7 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 
 [License: MIT](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/LICENSE)
 
-Third party dependencies are documented in the folder [third-party](third-party/README.md).
+Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
 [![downloads](https://pepy.tech/badge/attribuutit/month)](https://pepy.tech/project/attribuutit)
