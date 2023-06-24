@@ -1,0 +1,79 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+DocumentNamespace: https://cyclonedx/a0d4d964-cb18-4659-b172-9c6b655cbf2b_1
+DocumentName: From-Cyclone-DX
+SPDXID: SPDXRef-DOCUMENT
+
+## Creation Information
+Creator: Tool: CycloneDX:cyclonedx-bom-3.11.0
+Creator: Tool: CycloneDX:cyclonedx-python-lib-3.1.1
+Creator: Tool: CycloneToSpdx-0.1.4
+Created: 2023-06-24T20:31:40Z
+CreatorComment: <text>Converted from CycloneDX spec version 1.4</text>
+LicenseListVersion: 3.21
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-06-24T20:31:42Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:extensions={}</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-DOCUMENT
+## Relationships
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-806bc5c6-2439-490d-9bbb-a9036168f5e0
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-ae71e8c1-f289-4a59-8245-050d496b886c
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-da5f6630-4988-43c7-96d0-408c2830b454
+
+## Package Information
+PackageName: geotiff
+SPDXID: SPDXRef-806bc5c6-2439-490d-9bbb-a9036168f5e0
+PackageVersion: 0.2.9
+PackageDownloadLocation: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/geotiff@0.2.9
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-06-24T20:31:42Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-806bc5c6-2439-490d-9bbb-a9036168f5e0
+FilesAnalyzed: false
+
+## Package Information
+PackageName: pyshp
+SPDXID: SPDXRef-da5f6630-4988-43c7-96d0-408c2830b454
+PackageVersion: 2.3.1
+PackageDownloadLocation: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/pyshp@2.3.1
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-06-24T20:31:42Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-da5f6630-4988-43c7-96d0-408c2830b454
+FilesAnalyzed: false
+
+## Package Information
+PackageName: typer
+SPDXID: SPDXRef-ae71e8c1-f289-4a59-8245-050d496b886c
+PackageVersion: 0.7.0
+PackageDownloadLocation: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/typer@0.7.0
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-06-24T20:31:42Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-ae71e8c1-f289-4a59-8245-050d496b886c
+FilesAnalyzed: false
+
+

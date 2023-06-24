@@ -2,8 +2,8 @@
     {
         "key": "geotiff",
         "package_name": "geotiff",
-        "installed_version": "0.2.7",
-        "required_version": "0.2.7",
+        "installed_version": "0.2.9",
+        "required_version": "0.2.9",
         "dependencies": [
             {
                 "key": "numpy",
@@ -46,7 +46,7 @@
                 "key": "zarr",
                 "package_name": "zarr",
                 "installed_version": "2.13.3",
-                "required_version": ">=2.10.*",
+                "required_version": ">=2.10.0",
                 "dependencies": [
                     {
                         "key": "asciitree",
