@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](docs/third-p
 [![wheel](https://img.shields.io/pypi/wheel/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/attribuutit.svg?style=flat)](https://git.sr.ht/~sthagen/attribuutit/log)
 
 ## Documentation
 
