@@ -1,0 +1,14 @@
+name: attribuutit
+description: Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribuutit").
+license_spdx: MIT
+version: 2022.8.1
+spec_version: 1.0
+home_url: https://git.sr.ht/~sthagen/attribuutit
+news_url: https://libraries.io/pypi/attribuutit/versions.atom
+date: 2022-08-01
+about_resource: ./
+libraries_io_url: https://libraries.io/pypi/attribuutit?number=2022.8.1
+vcs_tool: git
+vcs_repository: https://git.sr.ht/~sthagen/attribuutit
+vcs_branch: default
+
