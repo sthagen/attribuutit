@@ -1,5 +1,7 @@
 site_name: Attribuutit
 site_description: "Nodes, Edges, Faces, and Attributes (Finnish: 'Solmut, reunat, pinnat ja attribuutit')."
+docs_dir: ../docs
+site_dir: ../site
 
 theme:
   name: 'material'
