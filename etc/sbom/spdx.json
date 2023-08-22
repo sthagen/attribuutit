@@ -3,23 +3,23 @@
   "spdxVersion" : "SPDX-2.3",
   "creationInfo" : {
     "comment" : "Converted from CycloneDX spec version 1.4",
-    "created" : "2023-08-16T06:09:01Z",
+    "created" : "2023-08-22T19:17:43Z",
     "creators" : [ "Tool: CycloneDX:cyclonedx-bom-3.11.2", "Tool: CycloneDX:cyclonedx-python-lib-3.1.5", "Tool: CycloneToSpdx-0.1.4" ],
     "licenseListVersion" : "3.21"
   },
   "name" : "From-Cyclone-DX",
   "dataLicense" : "CC0-1.0",
   "annotations" : [ {
-    "annotationDate" : "2023-08-16T06:09:03Z",
+    "annotationDate" : "2023-08-22T19:17:44Z",
     "annotationType" : "OTHER",
     "annotator" : "Tool: CycloneToSpdx",
     "comment" : "MISSING_CDX_PROPERTY:extensions={}"
   } ],
-  "documentNamespace" : "https://cyclonedx/68401035-a220-4cab-84b9-593968ef5510_1",
+  "documentNamespace" : "https://cyclonedx/867e20ad-0458-47bf-aef8-e1ef866d7031_1",
   "packages" : [ {
-    "SPDXID" : "SPDXRef-a2597b65-8a05-4b11-90de-277aa7c53407",
+    "SPDXID" : "SPDXRef-ad3206d5-fd3e-4ac5-bf3a-e8e7008e6295",
     "annotations" : [ {
-      "annotationDate" : "2023-08-16T06:09:03Z",
+      "annotationDate" : "2023-08-22T19:17:44Z",
       "annotationType" : "OTHER",
       "annotator" : "Tool: CycloneToSpdx",
       "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
@@ -28,19 +28,19 @@
     "downloadLocation" : "NOASSERTION",
     "externalRefs" : [ {
       "referenceCategory" : "PACKAGE-MANAGER",
-      "referenceLocator" : "pkg:pypi/typer@0.9.0",
+      "referenceLocator" : "pkg:pypi/pyshp@2.3.1",
       "referenceType" : "purl"
     } ],
     "filesAnalyzed" : false,
     "licenseConcluded" : "NOASSERTION",
     "licenseDeclared" : "NOASSERTION",
-    "name" : "typer",
+    "name" : "pyshp",
     "primaryPackagePurpose" : "LIBRARY",
-    "versionInfo" : "0.9.0"
+    "versionInfo" : "2.3.1"
   }, {
-    "SPDXID" : "SPDXRef-7c718339-c1dc-491e-aa24-f8ff2bdd20a5",
+    "SPDXID" : "SPDXRef-85f212a9-5412-4329-a13c-6554bf85e933",
     "annotations" : [ {
-      "annotationDate" : "2023-08-16T06:09:03Z",
+      "annotationDate" : "2023-08-22T19:17:44Z",
       "annotationType" : "OTHER",
       "annotator" : "Tool: CycloneToSpdx",
       "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
@@ -59,9 +59,9 @@
     "primaryPackagePurpose" : "LIBRARY",
     "versionInfo" : "0.2.9"
   }, {
-    "SPDXID" : "SPDXRef-aa8421ea-8b98-49cf-a749-877b1f9b79b7",
+    "SPDXID" : "SPDXRef-37a41e74-57f5-4b45-bc14-115446cc43f5",
     "annotations" : [ {
-      "annotationDate" : "2023-08-16T06:09:03Z",
+      "annotationDate" : "2023-08-22T19:17:44Z",
       "annotationType" : "OTHER",
       "annotator" : "Tool: CycloneToSpdx",
       "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
@@ -70,27 +70,27 @@
     "downloadLocation" : "NOASSERTION",
     "externalRefs" : [ {
       "referenceCategory" : "PACKAGE-MANAGER",
-      "referenceLocator" : "pkg:pypi/pyshp@2.3.1",
+      "referenceLocator" : "pkg:pypi/typer@0.9.0",
       "referenceType" : "purl"
     } ],
     "filesAnalyzed" : false,
     "licenseConcluded" : "NOASSERTION",
     "licenseDeclared" : "NOASSERTION",
-    "name" : "pyshp",
+    "name" : "typer",
     "primaryPackagePurpose" : "LIBRARY",
-    "versionInfo" : "2.3.1"
+    "versionInfo" : "0.9.0"
   } ],
   "relationships" : [ {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-7c718339-c1dc-491e-aa24-f8ff2bdd20a5"
+    "relatedSpdxElement" : "SPDXRef-85f212a9-5412-4329-a13c-6554bf85e933"
   }, {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-a2597b65-8a05-4b11-90de-277aa7c53407"
+    "relatedSpdxElement" : "SPDXRef-37a41e74-57f5-4b45-bc14-115446cc43f5"
   }, {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-aa8421ea-8b98-49cf-a749-877b1f9b79b7"
+    "relatedSpdxElement" : "SPDXRef-ad3206d5-fd3e-4ac5-bf3a-e8e7008e6295"
   } ]
 }
