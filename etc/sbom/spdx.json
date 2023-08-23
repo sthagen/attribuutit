@@ -3,23 +3,23 @@
   "spdxVersion" : "SPDX-2.3",
   "creationInfo" : {
     "comment" : "Converted from CycloneDX spec version 1.4",
-    "created" : "2023-08-22T19:17:43Z",
+    "created" : "2023-08-23T19:57:34Z",
     "creators" : [ "Tool: CycloneDX:cyclonedx-bom-3.11.2", "Tool: CycloneDX:cyclonedx-python-lib-3.1.5", "Tool: CycloneToSpdx-0.1.4" ],
     "licenseListVersion" : "3.21"
   },
   "name" : "From-Cyclone-DX",
   "dataLicense" : "CC0-1.0",
   "annotations" : [ {
-    "annotationDate" : "2023-08-22T19:17:44Z",
+    "annotationDate" : "2023-08-23T19:57:35Z",
     "annotationType" : "OTHER",
     "annotator" : "Tool: CycloneToSpdx",
     "comment" : "MISSING_CDX_PROPERTY:extensions={}"
   } ],
-  "documentNamespace" : "https://cyclonedx/867e20ad-0458-47bf-aef8-e1ef866d7031_1",
+  "documentNamespace" : "https://cyclonedx/c013beeb-fdac-479d-a102-dd03596fc761_1",
   "packages" : [ {
-    "SPDXID" : "SPDXRef-ad3206d5-fd3e-4ac5-bf3a-e8e7008e6295",
+    "SPDXID" : "SPDXRef-b5e62eb5-5ffb-41bf-a78a-48b34542b570",
     "annotations" : [ {
-      "annotationDate" : "2023-08-22T19:17:44Z",
+      "annotationDate" : "2023-08-23T19:57:35Z",
       "annotationType" : "OTHER",
       "annotator" : "Tool: CycloneToSpdx",
       "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
@@ -28,28 +28,7 @@
     "downloadLocation" : "NOASSERTION",
     "externalRefs" : [ {
       "referenceCategory" : "PACKAGE-MANAGER",
-      "referenceLocator" : "pkg:pypi/pyshp@2.3.1",
-      "referenceType" : "purl"
-    } ],
-    "filesAnalyzed" : false,
-    "licenseConcluded" : "NOASSERTION",
-    "licenseDeclared" : "NOASSERTION",
-    "name" : "pyshp",
-    "primaryPackagePurpose" : "LIBRARY",
-    "versionInfo" : "2.3.1"
-  }, {
-    "SPDXID" : "SPDXRef-85f212a9-5412-4329-a13c-6554bf85e933",
-    "annotations" : [ {
-      "annotationDate" : "2023-08-22T19:17:44Z",
-      "annotationType" : "OTHER",
-      "annotator" : "Tool: CycloneToSpdx",
-      "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
-    } ],
-    "copyrightText" : "NOASSERTION",
-    "downloadLocation" : "NOASSERTION",
-    "externalRefs" : [ {
-      "referenceCategory" : "PACKAGE-MANAGER",
-      "referenceLocator" : "pkg:pypi/geotiff@0.2.9",
+      "referenceLocator" : "pkg:pypi/geotiff@0.2.10",
       "referenceType" : "purl"
     } ],
     "filesAnalyzed" : false,
@@ -57,11 +36,11 @@
     "licenseDeclared" : "NOASSERTION",
     "name" : "geotiff",
     "primaryPackagePurpose" : "LIBRARY",
-    "versionInfo" : "0.2.9"
+    "versionInfo" : "0.2.10"
   }, {
-    "SPDXID" : "SPDXRef-37a41e74-57f5-4b45-bc14-115446cc43f5",
+    "SPDXID" : "SPDXRef-547d9bf5-d62c-4746-b792-afea6031e14d",
     "annotations" : [ {
-      "annotationDate" : "2023-08-22T19:17:44Z",
+      "annotationDate" : "2023-08-23T19:57:35Z",
       "annotationType" : "OTHER",
       "annotator" : "Tool: CycloneToSpdx",
       "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
@@ -79,18 +58,39 @@
     "name" : "typer",
     "primaryPackagePurpose" : "LIBRARY",
     "versionInfo" : "0.9.0"
+  }, {
+    "SPDXID" : "SPDXRef-7e67f274-b0e9-4822-aea4-98477a6402ff",
+    "annotations" : [ {
+      "annotationDate" : "2023-08-23T19:57:35Z",
+      "annotationType" : "OTHER",
+      "annotator" : "Tool: CycloneToSpdx",
+      "comment" : "MISSING_CDX_PROPERTY:componentType=\"LIBRARY\""
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:pypi/pyshp@2.3.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "pyshp",
+    "primaryPackagePurpose" : "LIBRARY",
+    "versionInfo" : "2.3.1"
   } ],
   "relationships" : [ {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-85f212a9-5412-4329-a13c-6554bf85e933"
+    "relatedSpdxElement" : "SPDXRef-b5e62eb5-5ffb-41bf-a78a-48b34542b570"
   }, {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-37a41e74-57f5-4b45-bc14-115446cc43f5"
+    "relatedSpdxElement" : "SPDXRef-547d9bf5-d62c-4746-b792-afea6031e14d"
   }, {
     "spdxElementId" : "SPDXRef-DOCUMENT",
     "relationshipType" : "DESCRIBES",
-    "relatedSpdxElement" : "SPDXRef-ad3206d5-fd3e-4ac5-bf3a-e8e7008e6295"
+    "relatedSpdxElement" : "SPDXRef-7e67f274-b0e9-4822-aea4-98477a6402ff"
   } ]
 }
