@@ -1,16 +1,16 @@
-geotiff==0.2.9
+geotiff==0.2.10
 ├── numpy [required: Any, installed: 1.25.1]
 ├── pyproj [required: Any, installed: 3.6.0]
 │   └── certifi [required: Any, installed: 2023.5.7]
-├── tifffile [required: >=2021.7.2,<2022.4.28, installed: 2022.4.26]
+├── tifffile [required: >=2021.7.4,!=2022.4.28, installed: 2022.4.26]
 │   └── numpy [required: >=1.19.2, installed: 1.25.1]
-└── zarr [required: >=2.10.0, installed: 2.15.0]
+└── zarr [required: >=2.12.0,<2.13, installed: 2.12.0]
     ├── asciitree [required: Any, installed: 0.3.3]
     ├── fasteners [required: Any, installed: 0.18]
-    ├── numcodecs [required: >=0.10.0, installed: 0.11.0]
+    ├── numcodecs [required: >=0.6.4, installed: 0.11.0]
     │   ├── entrypoints [required: Any, installed: 0.4]
     │   └── numpy [required: >=1.7, installed: 1.25.1]
-    └── numpy [required: >=1.20, installed: 1.25.1]
+    └── numpy [required: >=1.7, installed: 1.25.1]
 pyshp==2.3.1
 typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.5]
