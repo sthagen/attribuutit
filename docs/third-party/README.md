@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/attribuutit/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([6eaf1eb4 ...](https://git.sr.ht/~sthagen/attribuutit/blob/default/etc/sbom/cdx.json.sha256 "sha256:6eaf1eb4e9052de4ea0b46168e08961e29d7fdd3fd73b2fa249fcb29c85db9fc")).
-<!--[[[end]]] (checksum: 59e22118e6fda8c5a188fbec5d385625)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/attribuutit/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([1da0d3fe ...](https://git.sr.ht/~sthagen/attribuutit/blob/default/etc/sbom/cdx.json.sha256 "sha256:1da0d3fe4dd28c9dfab886e618ff0dbdc2c68cc92945f1a90542e35ca1c987e8")).
+<!--[[[end]]] (checksum: 74050bac6454d95e9e04c7d1faeefdd3)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -24,7 +24,7 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 |:----------------------------------------------------------|:----------------------------------------------------------|:-------------------------------------|:--------------------------------------------|:-------------------------------------------------------------------------------------------|
 | [asciitree](http://github.com/mbr/asciitree)              | [0.3.3](https://pypi.org/project/asciitree/0.3.3/)        | MIT                                  | Marc Brinkmann                              | Draws ASCII trees.                                                                         |
 | [certifi](https://github.com/certifi/python-certifi)      | [2023.5.7](https://pypi.org/project/certifi/2023.5.7/)    | Mozilla Public License 2.0 (MPL 2.0) | Kenneth Reitz                               | Python package for providing Mozilla's CA Bundle.                                          |
-| [click](https://palletsprojects.com/p/click/)             | [8.1.5](https://pypi.org/project/click/8.1.5/)            | BSD License                          | UNKNOWN                                     | Composable command line interface toolkit                                                  |
+| [click](https://palletsprojects.com/p/click/)             | [8.1.5](https://pypi.org/project/click/8.1.5/)            | BSD License                          | Pallets <contact@palletsprojects.com>       | Composable command line interface toolkit                                                  |
 | [entrypoints](https://github.com/takluyver/entrypoints)   | [0.4](https://pypi.org/project/entrypoints/0.4/)          | MIT License                          | Thomas Kluyver                              | Discover and load entry points from installed packages.                                    |
 | [fasteners](https://github.com/harlowja/fasteners)        | [0.18](https://pypi.org/project/fasteners/0.18/)          | Apache Software License              | Joshua Harlow                               | A python package that provides useful locks                                                |
 | [numcodecs](https://github.com/zarr-developers/numcodecs) | [0.11.0](https://pypi.org/project/numcodecs/0.11.0/)      | MIT License                          | Alistair Miles                              | A Python package providing buffer compression and transformation codecs for use            |
@@ -32,7 +32,7 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [pyproj](https://github.com/pyproj4/pyproj)               | [3.6.0](https://pypi.org/project/pyproj/3.6.0/)           | MIT License                          | Jeff Whitaker <jeffrey.s.whitaker@noaa.gov> | Python interface to PROJ (cartographic projections and coordinate transformations library) |
 | [tifffile](https://www.lfd.uci.edu/~gohlke/)              | [2022.4.26](https://pypi.org/project/tifffile/2022.4.26/) | BSD License                          | Christoph Gohlke                            | Read and write TIFF files                                                                  |
 | [zarr](https://github.com/zarr-developers/zarr-python)    | [2.12.0](https://pypi.org/project/zarr/2.12.0/)           | MIT License                          | Alistair Miles                              | An implementation of chunked, compressed, N-dimensional arrays for Python.                 |
-<!--[[[end]]] (checksum: 54a6163ab99eee8ef4f04057423fa9d1)-->
+<!--[[[end]]] (checksum: 17d0f203c1eb222cc0c0bbab5075481a)-->
 
 ## Dependency Tree(s)
 
