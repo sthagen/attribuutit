@@ -2,18 +2,15 @@
 
 Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribuutit").
 
-[License: MIT](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/LICENSE) |
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/COUNTRY-OF-ORIGIN) |
-[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![license](badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/attribuutitNAME/tree/default/item/LICENSE)
+[![Country of Origin](badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/attribuutitNAME/tree/default/item/COUNTRY-OF-ORIGIN)
+[![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/attribuutitNAME/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
-Third party dependencies are documented in the folder [third-party](third-party/README.md).
-
-[![version](https://img.shields.io/pypi/v/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
-[![downloads](https://static.pepy.tech/badge/attribuutit/month)](https://pepy.tech/project/attribuutit)
-[![wheel](https://img.shields.io/pypi/wheel/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
-[![supported-versions](https://img.shields.io/pypi/pyversions/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
-[![supported-implementations](https://img.shields.io/pypi/implementation/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
-[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/attribuutit.svg?style=flat)](https://git.sr.ht/~sthagen/attribuutit/log)
+[![Version](https://img.shields.io/pypi/v/attribuutitNAME.svg?style=flat)](https://pypi.python.org/pypi/attribuutitNAME/)
+[![Downloads](https://static.pepy.tech/badge/attribuutitNAME/month)](https://pepy.tech/project/attribuutitNAME)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/attribuutitNAME.svg?style=flat)](https://pypi.python.org/pypi/attribuutitNAME/)
+[![Maintenance Status](https://img.shields.io/github/commit-activity/y/sthagen/attribuutitNAME.svg?style=flat)](https://git.sr.ht/~sthagen/attribuutitNAME/log)
 
 ## Bug Tracker
 
