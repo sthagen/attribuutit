@@ -9,7 +9,7 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 
 [![Version](badges/latest-release.svg)](https://pypi.python.org/pypi/attribuutit/)
 [![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/attribuutit)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
+[![Python](badges/python-versions.svg)](https://pypi.python.org/pypi/attribuutit/)
 [![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/attribuutit/log)
 [![Country of Origin](badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/attribuutitNAME/tree/default/item/COUNTRY-OF-ORIGIN)
 [![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/attribuutitNAME/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
@@ -17,7 +17,7 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 
 [![Version](https://img.shields.io/pypi/v/attribuutitNAME.svg?style=flat)](https://pypi.python.org/pypi/attribuutitNAME/)
 [![Downloads](https://static.pepy.tech/badge/attribuutitNAME/month)](https://pepy.tech/project/attribuutitNAME)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/attribuutitNAME.svg?style=flat)](https://pypi.python.org/pypi/attribuutitNAME/)
+[![Python](https://img.shields.io/pypi/pyversions/attribuutitNAME.svg?style=flat)](https://pypi.python.org/pypi/attribuutitNAME/)
 [![Maintenance Status](https://img.shields.io/github/commit-activity/y/sthagen/attribuutitNAME.svg?style=flat)](https://git.sr.ht/~sthagen/attribuutitNAME/log)
 
 ## Bug Tracker
