@@ -7,7 +7,7 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 [![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 [![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
-[![Version](https://img.shields.io/pypi/v/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
+[![Version](badges/latest-release.svg)](https://pypi.python.org/pypi/attribuutit/)
 [![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/attribuutit)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
 [![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/attribuutit/log)
