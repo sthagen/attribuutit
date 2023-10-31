@@ -9,7 +9,7 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 
 [![Version](docs/badges/latest-release.svg)](https://pypi.python.org/pypi/attribuutit/)
 [![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/attribuutit)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)
+[![Python](docs/badges/python-versions.svg)](https://pypi.python.org/pypi/attribuutit/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/attribuutit/log)
 
 ## Documentation
