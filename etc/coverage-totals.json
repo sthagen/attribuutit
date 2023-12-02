@@ -1,3 +1,18 @@
 {
-  "attribuutit": {}
+  "attribuutit": {
+    "version": "7.3.2",
+    "timestamp": "2023-12-02T15:13:59.728680",
+    "branch_coverage": true,
+    "show_contexts": true,
+    "covered_lines": 185,
+    "num_statements": 268,
+    "percent_covered": 68.51851851851852,
+    "percent_covered_display": "68.52",
+    "missing_lines": 83,
+    "excluded_lines": 0,
+    "num_branches": 56,
+    "num_partial_branches": 5,
+    "covered_branches": 37,
+    "missing_branches": 19
+  }
 }
