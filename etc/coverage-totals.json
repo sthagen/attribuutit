@@ -1,7 +1,7 @@
 {
   "attribuutit": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:13:59.728680",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 15:50:33 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 185,
@@ -13,6 +13,26 @@
     "num_branches": 56,
     "num_partial_branches": 5,
     "covered_branches": 37,
-    "missing_branches": 19
+    "missing_branches": 19,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 7,
+    "files": [
+      "attribuutit/__init__.py",
+      "attribuutit/attribuutit.py",
+      "attribuutit/cli.py",
+      "attribuutit/shp.py",
+      "attribuutit/tif.py",
+      "attribuutit/vpf.py",
+      "attribuutit/wbk.py"
+    ],
+    "blake3": "ae8f8daa35df6cd129eb825dbecada9c3c5bab74302f1178816d421bd44cd728",
+    "blake2": "8aae77ca57d8c47cb474bd5bae4e5fd79cb122dcd02608d3948531b388260dbe3e6f3ec990e935c60c071b14fde5804e0922014c45d026914cb4074b235b38a2",
+    "sha512": "875d8c1572b40fc3b315e112f3a4dba44c28fbfd3a5b544d0a59dab82fe38f761a22e1db7efa7c7b9001bcf3ebef403e4ba39aaffa4172ad3586fc8facb67fc8",
+    "sha384": "ecd7379876b6c3acef64ba62945463728074549bfec6421153e620055e8f37f8e21a23490a920402188e2b404b0e915e",
+    "sha256": "0ef4d155f05f95cd0533f0c3a9688d0761291633fd44cf9333f69421a626e822",
+    "sha1": "a92fba0502805ea3410f6793c71ff0d5bd10dc74",
+    "md5": "8a83f177a877c58b01cb3da3f965b066",
+    "python_version": "3.10.12",
+    "entropy": 4.77522
   }
 }
