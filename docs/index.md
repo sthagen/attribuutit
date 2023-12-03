@@ -11,9 +11,6 @@ Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribu
 [![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/attribuutit)
 [![Python](badges/python-versions.svg)](https://pypi.python.org/pypi/attribuutit/)
 [![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/attribuutit/log)
-[![Country of Origin](badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/attribuutitNAME/tree/default/item/COUNTRY-OF-ORIGIN)
-[![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/attribuutitNAME/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
-[![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
 ## Bug Tracker
 
