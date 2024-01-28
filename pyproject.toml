@@ -7,6 +7,7 @@ name = "attribuutit"
 version = "2022.8.1"
 description = 'Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribuutit").'
 readme = "README.md"
+license = {file = "LICENSE"}
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 maintainers = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 classifiers = [
