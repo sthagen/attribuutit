@@ -1,4 +1,5 @@
 """Parsers for Vector Product Format (VPF) artifacts conforming to MIL-STD-2407."""
+
 from itertools import takewhile
 from typing import Any, Dict, Generator, Tuple, Union, no_type_check
 
@@ -165,9 +166,9 @@ class Table:
             that_key_type = self.table['columns'][col_name]['key_type']
             if that_key_type not in self.key_types:
                 self.table['error'] = True
-                self.table[
-                    'error_detail'
-                ] = f'key type error in {col_name} column spec with unknown code {that_key_type}'
+                self.table['error_detail'] = (
+                    f'key type error in {col_name} column spec with unknown code {that_key_type}'
+                )
                 return self.ERROR
 
             next_segment_start += len(column_spec) + 1

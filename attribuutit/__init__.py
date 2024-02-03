@@ -1,4 +1,5 @@
 """Nodes, Edges, Faces, and Attributes (Finnish: "Solmut, reunat, pinnat ja attribuutit")."""
+
 import os
 import pathlib
 from typing import List
