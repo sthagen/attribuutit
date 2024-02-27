@@ -20,6 +20,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "https://git.sr.ht/~sthagen/attribuutit",
     "keywords": "attributes,edges,faces,gis-tools,nodes,verification",
     "license": "",
@@ -36,6 +37,7 @@
       "Source Code": "https://git.sr.ht/~sthagen/attribuutit",
       "Test Coverage": "https://codes.dilettant.life/coverage/attribuutit"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/attribuutit/2022.8.1/",
     "requires_dist": [
       "geotiff (>=0.2.7)",
