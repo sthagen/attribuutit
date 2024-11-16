@@ -24,6 +24,8 @@
     "home_page": "https://git.sr.ht/~sthagen/attribuutit",
     "keywords": "attributes,edges,faces,gis-tools,nodes,verification",
     "license": "",
+    "license_expression": null,
+    "license_files": null,
     "maintainer": "Stefan Hagen",
     "maintainer_email": "stefan@hagen.link",
     "name": "attribuutit",
