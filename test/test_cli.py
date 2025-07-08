@@ -1,6 +1,7 @@
 from typer.testing import CliRunner
 
 from attribuutit.cli import app
+from attribuutit import VERSION
 
 runner = CliRunner()
 
@@ -11,6 +12,13 @@ def test_app():
     assert result.exit_code == 2
     assert 'Usage: ' in result.stdout
     # assert f"Error: No such command '{non_existing_command}'." in result.stderr
+
+
+def test_app_version():
+    version_cmd = 'version'
+    result = runner.invoke(app, [version_cmd])
+    assert result.exit_code == 0
+    assert VERSION == result.stdout.strip()
 
 
 def test_app_eject():
