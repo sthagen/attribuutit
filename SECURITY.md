@@ -4,10 +4,10 @@
 
 Versions of attribuutit currently being supported with security updates.
 
-| Version(s)   | Supported |
-|:------------ |:--------- |
-| 2022.8.1     | yes       |
-| < 2022.8.1   | no        |
+| Version(s) | Supported |
+|:-----------|:----------|
+| 2025.7.8   | yes       |
+| < 2025.7.8 | no        |
 
 ## Reporting a Vulnerability
 
