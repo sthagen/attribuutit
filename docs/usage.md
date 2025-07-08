@@ -1,25 +1,25 @@
 # Usage
 
-## Example 
+## Example
 
 ### Help
 
 ```console
 ❯ attribuutit --help
-Usage: attribuutit [OPTIONS] COMMAND [ARGS]...
 
-Options:
-  --install-completion [bash|zsh|fish|powershell|pwsh]
-                                  Install completion for the specified shell.
-  --show-completion [bash|zsh|fish|powershell|pwsh]
-                                  Show completion for the specified shell, to
-                                  copy it or customize the installation.
-  --help                          Show this message and exit.
+ Usage: attribuutit [OPTIONS] COMMAND [ARGS]...
 
-Commands:
-  eject    Eject an example configuration in JSON format with stem equal...
-  inspect  Inspect the file at path and persist the report eventually.
-  scan     Scan the file system based on the configuration given in...
+╭─ Options ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --install-completion          Install completion for the current shell.                                                    │
+│ --show-completion             Show completion for the current shell, to copy it or customize the installation.             │
+│ --help                        Show this message and exit.                                                                  │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ version   Report the version.                                                                                              │
+│ eject     Eject an example configuration in JSON format with stem equal to name.                                           │
+│ scan      Scan the file system based on the configuration given in name.json and persist the report eventually.            │
+│ inspect   Inspect the file at path and persist the report eventually.                                                      │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 ### Inspect GeoTIFF
