@@ -1,58 +1,74 @@
 {
   "info": {
-    "author": "Stefan Hagen",
-    "author_email": "stefan@hagen.link",
+    "author": null,
+    "author_email": "Stefan Hagen <stefan@hagen.link>",
     "bugtrack_url": null,
     "classifiers": [
       "Development Status :: 3 - Alpha",
       "Intended Audience :: Developers",
       "License :: OSI Approved :: MIT License",
       "Programming Language :: Python :: 3.10",
-      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
       "Programming Language :: Python :: 3.9"
     ],
-    "description": "# attribuutit\n\nNodes, Edges, Faces, and Attributes (Finnish: \"Solmut, reunat, pinnat ja attribuutit\").\n\n[License: MIT](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/LICENSE)\n\n[![version](https://img.shields.io/pypi/v/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)\n[![downloads](https://pepy.tech/badge/attribuutit/month)](https://pepy.tech/project/attribuutit)\n[![wheel](https://img.shields.io/pypi/wheel/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)\n[![supported-versions](https://img.shields.io/pypi/pyversions/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)\n[![supported-implementations](https://img.shields.io/pypi/implementation/attribuutit.svg?style=flat)](https://pypi.python.org/pypi/attribuutit/)\n\n## Documentation\n\nUser and developer [documentation of attribuutit](https://codes.dilettant.life/docs/attribuutit).\n\n## Bug Tracker\n\nFeature requests and bug reports are bested entered in the [todos of attribuutit](https://todo.sr.ht/~sthagen/attribuutit).\n\n## Primary Source repository\n\nThe primary source repository of [attribuutit is at sourcehut](https://git.sr.ht/~sthagen/attribuutit)\na collection of tools useful for software development.\n\n# Status\n\nExperimental.\n\n**Note** The default branch is `default`.\n",
+    "description": "# Attribuutit\n\nNodes, Edges, Faces, and Attributes (Finnish: \"Solmut, reunat, pinnat ja attribuutit\").\n\n[![License](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/LICENSE)\n[![Country of Origin](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/COUNTRY-OF-ORIGIN)\n[![Export Classification Control Number (ECCN)](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)\n[![Configuration](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/configuration-sbom.svg)](https://git.sr.ht/~sthagen/attribuutit/tree/default/item/docs/third-party/README.md)\n\n[![Version](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/latest-release.svg)](https://pypi.python.org/pypi/attribuutit/)\n[![Downloads](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/downloads-per-month.svg)](https://pepy.tech/project/attribuutit)\n[![Python](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/python-versions.svg)](https://pypi.python.org/pypi/attribuutit/)\n[![Maintenance Status](https://git.sr.ht/~sthagen/attribuutit/blob/default/docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/attribuutit/log)\n\n## Documentation\n\nUser and developer [documentation of attribuutit](https://codes.dilettant.life/docs/attribuutit).\n\n## Bug Tracker\n\nAny feature requests or bug reports shall go to the [todos of attribuutit](https://todo.sr.ht/~sthagen/attribuutit).\n\n## Primary Source repository\n\nThe main source of `attribuutit` is on a mountain in central Switzerland.\nWe use distributed version control (git).\nThere is no central hub.\nEvery clone can become a new source for the benefit of all.\nThe preferred public clone of `attribuutit` is:\n\n* [at sourcehut](https://git.sr.ht/~sthagen/attribuutit) - a collection of tools useful for software development.\n\n## Contributions\n\nPlease do not submit \"pull requests\" (I found no way to disable that \"feature\" on GitHub).\nIf you like to share small changes under the repositories license please kindly do so by sending a patchset.\nYou can either send such a patchset per email using [git send-email](https://git-send-email.io) or \nif you are a sourcehut user by selecting \"Prepare a patchset\" on the summary page of your fork at [sourcehut](https://git.sr.ht/).\n\n## Support\n\nPlease kindly submit issues at https://todo.sr.ht/~sthagen/attribuutit or write plain text email to ~sthagen/attribuutit@lists.sr.ht to submit patches and request support. Thanks.\n\n# Status\n\nExperimental.\n\n**Note** The default branch is `default`.\n",
     "description_content_type": "text/markdown",
     "docs_url": null,
-    "download_url": "",
+    "download_url": null,
     "downloads": {
       "last_day": -1,
       "last_month": -1,
       "last_week": -1
     },
-    "dynamic": null,
-    "home_page": "https://git.sr.ht/~sthagen/attribuutit",
-    "keywords": "attributes,edges,faces,gis-tools,nodes,verification",
-    "license": "",
+    "dynamic": [
+      "License-File"
+    ],
+    "home_page": null,
+    "keywords": "attributes, edges, faces, gis-tools, nodes, verification",
+    "license": "MIT License\n        \n        Copyright (c) 2025 Stefan Hagen\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy\n        of this software and associated documentation files (the \"Software\"), to deal\n        in the Software without restriction, including without limitation the rights\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n        copies of the Software, and to permit persons to whom the Software is\n        furnished to do so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.\n        ",
     "license_expression": null,
-    "license_files": null,
-    "maintainer": "Stefan Hagen",
-    "maintainer_email": "stefan@hagen.link",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": "Stefan Hagen <stefan@hagen.link>",
     "name": "attribuutit",
     "package_url": "https://pypi.org/project/attribuutit/",
     "platform": null,
     "project_url": "https://pypi.org/project/attribuutit/",
     "project_urls": {
-      "Bug Tracker": "https://todo.sr.ht/~sthagen/attribuutit",
+      "Bug-Tracker": "https://todo.sr.ht/~sthagen/attribuutit",
       "Documentation": "https://codes.dilettant.life/docs/attribuutit",
       "Homepage": "https://git.sr.ht/~sthagen/attribuutit",
-      "Source Code": "https://git.sr.ht/~sthagen/attribuutit",
-      "Test Coverage": "https://codes.dilettant.life/coverage/attribuutit"
+      "Source-Code": "https://git.sr.ht/~sthagen/attribuutit",
+      "Test-Coverage": "https://codes.dilettant.life/coverage/attribuutit"
     },
-    "provides_extra": null,
-    "release_url": "https://pypi.org/project/attribuutit/2022.8.1/",
-    "requires_dist": [
-      "geotiff (>=0.2.7)",
-      "pyshp (>=2.3.1)",
-      "typer (>=0.6.1)"
+    "provides_extra": [
+      "dev"
     ],
-    "requires_python": ">=3.8",
+    "release_url": "https://pypi.org/project/attribuutit/2025.7.8/",
+    "requires_dist": [
+      "geotiff>=0.2.10",
+      "pyshp>=2.3.1",
+      "typer>=0.16.0",
+      "black; extra == \"dev\"",
+      "coverage; extra == \"dev\"",
+      "hypothesis; extra == \"dev\"",
+      "mypy; extra == \"dev\"",
+      "pytest; extra == \"dev\"",
+      "pytest-cov; extra == \"dev\"",
+      "pytest-flake8; extra == \"dev\"",
+      "ruff; extra == \"dev\""
+    ],
+    "requires_python": ">=3.9",
     "summary": "Nodes, Edges, Faces, and Attributes (Finnish: \"Solmut, reunat, pinnat ja attribuutit\").",
-    "version": "2022.8.1",
+    "version": "2025.7.8",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 14614859,
+  "last_serial": 30024519,
   "releases": {
     "2022.5.22": [
       {
@@ -185,48 +201,92 @@
         "yanked": false,
         "yanked_reason": null
       }
+    ],
+    "2025.7.8": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f0622d96094ccd590867ce11de90b97243cab0a6168f97285ee484f78e81a0ac",
+          "md5": "177e8763fe151b182091c9c6e60c713b",
+          "sha256": "13dd358282175a87a7841be8d030588457781094390432b664f1637a6220f96e"
+        },
+        "downloads": -1,
+        "filename": "attribuutit-2025.7.8-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "177e8763fe151b182091c9c6e60c713b",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 11372,
+        "upload_time": "2025-07-08T00:34:50",
+        "upload_time_iso_8601": "2025-07-08T00:34:50.539813Z",
+        "url": "https://files.pythonhosted.org/packages/f0/62/2d96094ccd590867ce11de90b97243cab0a6168f97285ee484f78e81a0ac/attribuutit-2025.7.8-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "94675332eab7f1199079726dc94d11ddb05a39f308798b71afb253f290208968",
+          "md5": "8e26754cb6a4586dbdf0bd79dbdc9ac1",
+          "sha256": "b9328fcd46e2e1e773d85514b2415f918bd32b4c2f3fef04ad37c7f8e8c8ea86"
+        },
+        "downloads": -1,
+        "filename": "attribuutit-2025.7.8.tar.gz",
+        "has_sig": false,
+        "md5_digest": "8e26754cb6a4586dbdf0bd79dbdc9ac1",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 14392,
+        "upload_time": "2025-07-08T00:34:51",
+        "upload_time_iso_8601": "2025-07-08T00:34:51.787152Z",
+        "url": "https://files.pythonhosted.org/packages/94/67/5332eab7f1199079726dc94d11ddb05a39f308798b71afb253f290208968/attribuutit-2025.7.8.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
     ]
   },
   "urls": [
     {
-      "comment_text": "",
+      "comment_text": null,
       "digests": {
-        "blake2b_256": "cda6e0a23f660575464a106746ed80063f236821a07635054a89a43a12969dc1",
-        "md5": "a5d8d8df723f5deb3fa99e9e1de103d7",
-        "sha256": "1e2083a59b6b6b2107c5f0069174b5984b77e6e793052dd8f0c4a608b0677d86"
+        "blake2b_256": "f0622d96094ccd590867ce11de90b97243cab0a6168f97285ee484f78e81a0ac",
+        "md5": "177e8763fe151b182091c9c6e60c713b",
+        "sha256": "13dd358282175a87a7841be8d030588457781094390432b664f1637a6220f96e"
       },
       "downloads": -1,
-      "filename": "attribuutit-2022.8.1-py2.py3-none-any.whl",
+      "filename": "attribuutit-2025.7.8-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "a5d8d8df723f5deb3fa99e9e1de103d7",
+      "md5_digest": "177e8763fe151b182091c9c6e60c713b",
       "packagetype": "bdist_wheel",
-      "python_version": "py2.py3",
-      "requires_python": ">=3.8",
-      "size": 10053,
-      "upload_time": "2022-08-01T16:20:55",
-      "upload_time_iso_8601": "2022-08-01T16:20:55.810003Z",
-      "url": "https://files.pythonhosted.org/packages/cd/a6/e0a23f660575464a106746ed80063f236821a07635054a89a43a12969dc1/attribuutit-2022.8.1-py2.py3-none-any.whl",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 11372,
+      "upload_time": "2025-07-08T00:34:50",
+      "upload_time_iso_8601": "2025-07-08T00:34:50.539813Z",
+      "url": "https://files.pythonhosted.org/packages/f0/62/2d96094ccd590867ce11de90b97243cab0a6168f97285ee484f78e81a0ac/attribuutit-2025.7.8-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
-      "comment_text": "",
+      "comment_text": null,
       "digests": {
-        "blake2b_256": "fbf97d56ed219b106045f0bf319c1b9f68da08c70474f3ae8d468a7983ccd4e3",
-        "md5": "2cbb2ffe7429a9a1992aa5ad03ec3bd7",
-        "sha256": "2d27e9b40ef330c9309087dbc8f59d11b901d9c011ad054e0e8af175d4c77a2a"
+        "blake2b_256": "94675332eab7f1199079726dc94d11ddb05a39f308798b71afb253f290208968",
+        "md5": "8e26754cb6a4586dbdf0bd79dbdc9ac1",
+        "sha256": "b9328fcd46e2e1e773d85514b2415f918bd32b4c2f3fef04ad37c7f8e8c8ea86"
       },
       "downloads": -1,
-      "filename": "attribuutit-2022.8.1.tar.gz",
+      "filename": "attribuutit-2025.7.8.tar.gz",
       "has_sig": false,
-      "md5_digest": "2cbb2ffe7429a9a1992aa5ad03ec3bd7",
+      "md5_digest": "8e26754cb6a4586dbdf0bd79dbdc9ac1",
       "packagetype": "sdist",
       "python_version": "source",
-      "requires_python": ">=3.8",
-      "size": 37720,
-      "upload_time": "2022-08-01T16:20:57",
-      "upload_time_iso_8601": "2022-08-01T16:20:57.537359Z",
-      "url": "https://files.pythonhosted.org/packages/fb/f9/7d56ed219b106045f0bf319c1b9f68da08c70474f3ae8d468a7983ccd4e3/attribuutit-2022.8.1.tar.gz",
+      "requires_python": ">=3.9",
+      "size": 14392,
+      "upload_time": "2025-07-08T00:34:51",
+      "upload_time_iso_8601": "2025-07-08T00:34:51.787152Z",
+      "url": "https://files.pythonhosted.org/packages/94/67/5332eab7f1199079726dc94d11ddb05a39f308798b71afb253f290208968/attribuutit-2025.7.8.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

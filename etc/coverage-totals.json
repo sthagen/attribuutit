@@ -1,19 +1,20 @@
 {
   "attribuutit": {
-    "coverage_tool_version": "7.3.2",
-    "timestamp": "2023-12-04 22:32:49 +00:00",
+    "format": 3,
+    "coverage_tool_version": "7.9.2",
+    "timestamp": "2025-07-08 00:44:28 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
-    "covered_lines": 185,
-    "num_statements": 268,
-    "percent_covered": 68.51851851851852,
-    "percent_covered_display": "68.52",
+    "covered_lines": 190,
+    "num_statements": 273,
+    "percent_covered": 67.63754045307444,
+    "percent_covered_display": "67.64",
     "missing_lines": 83,
     "excluded_lines": 0,
-    "num_branches": 56,
+    "num_branches": 36,
     "num_partial_branches": 5,
-    "covered_branches": 37,
-    "missing_branches": 19,
+    "covered_branches": 19,
+    "missing_branches": 17,
     "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
     "nfiles": 7,
     "files": [
@@ -25,14 +26,14 @@
       "attribuutit/vpf.py",
       "attribuutit/wbk.py"
     ],
-    "blake3": "ae8f8daa35df6cd129eb825dbecada9c3c5bab74302f1178816d421bd44cd728",
-    "blake2": "8aae77ca57d8c47cb474bd5bae4e5fd79cb122dcd02608d3948531b388260dbe3e6f3ec990e935c60c071b14fde5804e0922014c45d026914cb4074b235b38a2",
-    "sha512": "875d8c1572b40fc3b315e112f3a4dba44c28fbfd3a5b544d0a59dab82fe38f761a22e1db7efa7c7b9001bcf3ebef403e4ba39aaffa4172ad3586fc8facb67fc8",
-    "sha384": "ecd7379876b6c3acef64ba62945463728074549bfec6421153e620055e8f37f8e21a23490a920402188e2b404b0e915e",
-    "sha256": "0ef4d155f05f95cd0533f0c3a9688d0761291633fd44cf9333f69421a626e822",
-    "sha1": "a92fba0502805ea3410f6793c71ff0d5bd10dc74",
-    "md5": "8a83f177a877c58b01cb3da3f965b066",
-    "python_version": "3.10.12",
-    "entropy": 4.77522
+    "blake3": "9b57cdb6a4f7c028f74940fd7b33c85ab1408293d70adeea0ec6b7cac3c9853c",
+    "blake2": "790ebc98982e4928c89245b9b46472425a174a89773835449950a4bdc4cadb5d1d7450a8c38c5e82304187fb5e6d7aa63f72ad6c9d5fb2a3c1626a52a287fda2",
+    "sha512": "a81189ef01eaa3b5e716619f08eb8b7c266270ff7cdc1971ae23e8fc2ee2d6aa15f2b0f5c80a6d0be7ad2c655acabebca454f749813d12824075350efc1ea3bf",
+    "sha384": "04e5b3b30a23d03c2988e74f8821c490258dd8ba9662f2b24fa480c3d5ddcd5dbfb9c646ffcf6a0bdcbae6e740de55bb",
+    "sha256": "61ca99242b56ed442a0e803dd73d90afc1b81ed3a35353db8d51351695e9ab50",
+    "sha1": "d830677361d26463abe5724cab634442d088e6b2",
+    "md5": "cd4c122dfb728298c0dac42a1caeea70",
+    "python_version": "3.12.1",
+    "entropy": 4.777892
   }
 }
