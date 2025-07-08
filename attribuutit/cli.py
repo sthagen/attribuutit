@@ -1,4 +1,5 @@
 """Scan a tree of files and extract attributes of the underlying vector or raster data."""
+
 import json
 import pathlib
 import sys
@@ -8,8 +9,16 @@ import typer
 import attribuutit.shp as shp
 import attribuutit.tif as tif
 import attribuutit.vpf as vpf
+from attribuutit import VERSION
 
 app = typer.Typer()
+
+
+@app.command()
+def version() -> int:
+    """Report the version."""
+    typer.echo(VERSION)
+    return 0
 
 
 @app.command()
