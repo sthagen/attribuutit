@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=expression-not-assigned,line-too-long,missing-module-docstring
 import sys
 
 from attribuutit.cli import app

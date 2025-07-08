@@ -1,4 +1,3 @@
-#! /usr/bin/env python
 """Scan a tree of files and extract attributes of the underlying vector or raster data."""
 import json
 import pathlib
